@@ -1,0 +1,11 @@
+{
+    "sql": "SELECT * FROM 'my-topic'",
+    "ruleDisabled": true,
+    "awsIotSqlVersion": "2016-03-23",
+    "actions": [{
+        "firehose": {
+            "roleArn": ""arn:aws:iam::772044201709:role/service-role/IoT_to_Firehose",
+            "deliveryStreamName": "iotops-iot-stream"
+        }
+    }]
+  }
